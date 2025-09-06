@@ -1,8 +1,9 @@
-Treinamento de Redes Neurais com Transfer Learning.
+## Treinamento de Redes Neurais com Transfer Learning.
 
 ![Machine001](https://github.com/user-attachments/assets/6e3d41d5-0b53-449c-b4e2-0d32b9036a07)
 
 
+**Bootcamp BairesDev - Machine Learning Training**
 
 --- 
 
@@ -39,7 +40,7 @@ Projeto acadêmico de **Treinamento de Redes Neurais com Transfer Learning**, de
 ## ▶️ Executando no Colab
 Clique no botão abaixo para abrir no Google Colab:
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SEU_USUARIO/Transfer-Learning-Project/blob/main/Transfer_Learning_Colab.ipynb)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Santosdevbjj/Transfer-Learning-Project/blob/main/Transfer_Learning_Colab.ipynb)
 
 ## ⚙️ Requisitos
 Instale as dependências:
