@@ -3,7 +3,7 @@
 ![Machine001](https://github.com/user-attachments/assets/6e3d41d5-0b53-449c-b4e2-0d32b9036a07)
 
 
-**Bootcamp BairesDev - Machine Learning Training**
+**Bootcamp BairesDev - Machine Learning Training** 
 
 --- 
 
