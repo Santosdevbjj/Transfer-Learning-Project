@@ -30,14 +30,20 @@ dataset, info = tfds.load("cats_vs_dogs", with_info=True, as_supervised=True)
 total_size = info.splits["train"].num_examples
 train_size = int(0.8 * total_size)
 val_size = int(0.1 * total_size)
+test_size = total_size - train_size - val_size  # Garantir que o resto seja o conjunto de teste
 
-# Shuffle global para evitar viés
-full_dataset = dataset["train"].shuffle(1000, seed=SEED)
-
-# Split manual: 80% treino, 10% validação, 10% teste
-train_ds = full_dataset.take(train_size)
-val_ds = full_dataset.skip(train_size).take(val_size)
-test_ds = full_dataset.skip(train_size + val_size)
+# A divisão de dados do TensorFlow é um pouco complicada,
+# uma abordagem mais segura é usar a divisão de subconjuntos
+# de treinamento, validação e teste do próprio `tfds.load()`:
+train_ds, val_ds, test_ds = tfds.load(
+    "cats_vs_dogs",
+    split=[
+        f"train[:{train_size}]",  # 80% para treino
+        f"train[{train_size}:{train_size + val_size}]",  # 10% para validação
+        f"train[{train_size + val_size}:]",  # 10% para teste
+    ],
+    as_supervised=True,
+)
 
 # ===============================
 # 2. Pré-processamento
@@ -47,9 +53,10 @@ def format_example(image, label):
     image = image / 255.0  # normalização
     return image, label
 
-train_ds = train_ds.map(format_example).batch(BATCH_SIZE).shuffle(1000, seed=SEED)
-val_ds = val_ds.map(format_example).batch(BATCH_SIZE)
-test_ds = test_ds.map(format_example).batch(BATCH_SIZE)
+# Aplicar pré-processamento e batch
+train_ds = train_ds.map(format_example).shuffle(1000, seed=SEED).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
+val_ds = val_ds.map(format_example).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
+test_ds = test_ds.map(format_example).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
 
 # ===============================
 # 3. Carregar modelo pré-treinado
@@ -82,7 +89,7 @@ history = model.fit(train_ds, validation_data=val_ds, epochs=EPOCHS)
 # 5. Avaliar desempenho
 # ===============================
 loss, acc = model.evaluate(test_ds)
-print(f"Acurácia no conjunto de teste: {acc:.2f}")
+print(f"Acurácia no conjunto de teste: {acc:.4f}")
 
 # ===============================
 # 6. Visualização de métricas
@@ -93,18 +100,22 @@ loss = history.history["loss"]
 val_loss = history.history["val_loss"]
 epochs_range = range(EPOCHS)
 
-plt.figure(figsize=(8, 8))
+plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
-plt.plot(epochs_range, acc, label="Treino")
-plt.plot(epochs_range, val_acc, label="Validação")
+plt.plot(epochs_range, acc, label="Acurácia de Treino")
+plt.plot(epochs_range, val_acc, label="Acurácia de Validação")
 plt.legend(loc="lower right")
-plt.title("Acurácia")
+plt.title("Acurácia de Treino e Validação")
+plt.xlabel("Épocas")
+plt.ylabel("Acurácia")
 
 plt.subplot(1, 2, 2)
-plt.plot(epochs_range, loss, label="Treino")
-plt.plot(epochs_range, val_loss, label="Validação")
+plt.plot(epochs_range, loss, label="Loss de Treino")
+plt.plot(epochs_range, val_loss, label="Loss de Validação")
 plt.legend(loc="upper right")
-plt.title("Loss")
+plt.title("Loss de Treino e Validação")
+plt.xlabel("Épocas")
+plt.ylabel("Loss")
 plt.show()
 
 # ===============================
