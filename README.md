@@ -25,7 +25,7 @@ A ideia central é aproveitar modelos pré-treinados como MobileNetV2 e adaptá-
 
 # 🧠 Projeto de Transfer Learning em Python (TensorFlow/Keras)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Santosdevbjj/Transfer-Learning-Project/blob/main/transfer_learning_colab.py)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Santosdevbjj/Transfer-Learning-Project/blob/main/Transfer_Learning_Colab.ipynb)
 
 Este repositório implementa **Transfer Learning** com a rede **MobileNetV2**, pré-treinada no **ImageNet**, adaptada para classificação binária.  
 O exemplo utiliza o dataset **Cats vs Dogs** do `tensorflow_datasets`, mas você pode facilmente substituir por suas próprias imagens.
