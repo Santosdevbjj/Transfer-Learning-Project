@@ -26,6 +26,18 @@ O exemplo utiliza o dataset **Cats vs Dogs** do `tensorflow_datasets`, mas você
 
 ---
 
+# Transfer Learning Project
+
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+
+---
+
+
+---
+
+
 ## 📂 Estrutura do Repositório
 
 
