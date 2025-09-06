@@ -6,3 +6,16 @@ __pycache__/
 *.zip
 data/
 models/
+
+
+# Ambientes virtuais
+venv/
+
+
+# Modelos treinados
+*.h5
+*.keras
+
+# Arquivos temporários
+*.log
+*.tmp
