@@ -111,15 +111,7 @@ Se você quiser treinar com suas próprias imagens, siga estes passos:
 
 **1. Organize seus dados no formato:**
 
-data/
-├── class1/
-│   ├── img001.jpg
-│   ├── img002.jpg
-│   └── ...
-└── class2/
-    ├── img101.jpg
-    ├── img102.jpg
-    └── ...
+<img width="853" height="503" alt="Screenshot_20250906-030921" src="https://github.com/user-attachments/assets/565ccb1a-96d4-4cae-a30a-95009d331a4d" />
 
 
 
