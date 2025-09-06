@@ -16,3 +16,7 @@ types-tensorflow==2.15.0.20240311
 # Jupyter (opcional, útil para rodar notebooks locais)
 jupyter==1.0.0
 notebook==7.0.3
+
+
+# Pre-commit hooks
+pre-commit==3.4.0
