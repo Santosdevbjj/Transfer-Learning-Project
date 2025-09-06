@@ -1,7 +1,5 @@
 # requirements.txt
-
-tensorflow==2.15.0
+tensorflow[and-cuda]==2.15.0
 tensorflow-datasets==4.9.4
 matplotlib==3.7.2
 numpy==1.24.3
-tensorflow[and-cuda]==2.15.0
