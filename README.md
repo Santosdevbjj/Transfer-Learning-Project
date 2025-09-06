@@ -174,6 +174,47 @@ __pycache__/
 
 ---
 
+**requirements-dev.txt**
+
+
+🔎 **Explicação dos pacotes:**
+
+pytest / pytest-cov → para rodar testes unitários com cobertura.
+
+flake8 → análise de estilo e linting.
+
+black → formatação automática de código.
+
+isort → organização automática de imports.
+
+mypy → verificação estática de tipos (bom para manter qualidade).
+
+types-tensorflow → stubs de tipagem para TensorFlow.
+
+jupyter e notebook → opcionais, mas úteis se você quiser rodar .ipynb localmente.
+
+---
+
+🚀 **Como usar no repositório:**
+
+Você pode instalar as dependências de desenvolvimento separadamente com:
+
+pip install -r requirements-dev.txt
+
+---
+
+
+E rodar os checks automáticos antes de dar commit, por exemplo:
+
+black .
+flake8 .
+mypy .
+pytest
+
+
+---
+
+
 📜 **Licença**
 
 Este projeto está sob a licença MIT (veja o arquivo LICENSE).
