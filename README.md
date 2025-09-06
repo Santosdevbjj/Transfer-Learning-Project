@@ -6,13 +6,19 @@
 **Bootcamp BairesDev - Machine Learning Training** 
 
 --- 
+📌 **Descrição:**
 
-**DESCRIÇÃO:**
 
 O projeto consiste em aplicar o método de Transfer Learning em uma rede de Deep Learning na linguagem Python no ambiente COLAB. 
 
-
 Neste projeto, você pode usar sua própria base de dados (exemplo: fotos suas, dos seus pais, dos seus amigos, dos seus animais domésticos, etc), o exemplo de gatos e cachorros, pode ser substituído por duas outras classes do seu interesse.
+
+---
+
+Este projeto demonstra o uso de Transfer Learning em redes neurais utilizando Python e TensorFlow.
+O objetivo é treinar uma rede de deep learning em um dataset personalizado (ou no dataset público de gatos vs cachorros) com Colab ou localmente.
+
+A ideia central é aproveitar modelos pré-treinados como MobileNetV2 e adaptá-los a novas classes, reduzindo custo de treino e melhorando a performance em datasets pequenos.
 
 
 ---
