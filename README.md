@@ -203,6 +203,22 @@ flake8 .
 mypy .
 pytest
 
+---
+
+📌 **3. Instalar o pre-commit localmente**
+
+Depois de instalar as dependências (pip install -r requirements-dev.txt), rode:
+
+pre-commit install
+
+---
+
+📌 **4. Testar manualmente os hooks**
+
+Você pode rodar os hooks manualmente em todos os arquivos já existentes:
+
+pre-commit run --all-files
+
 
 ---
 
@@ -213,7 +229,7 @@ Este projeto está sob a licença MIT (veja o arquivo LICENSE).
 
 ---
 
-✅ Agora seu repositório tem:  
+✅ **Agora seu repositório tem:**  
 1. **Badge do Colab** para abrir direto.  
 2. **`.gitignore` aprimorado** (ignora modelos, cache e venv).  
 3. **Seção para usar dataset próprio** bem explicada.  
