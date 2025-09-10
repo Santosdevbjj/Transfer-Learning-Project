@@ -247,10 +247,7 @@ Este projeto está sob a licença MIT (veja o arquivo LICENSE).
 
 ---
 
-✅ **Agora seu repositório tem:**  
-1. **Badge do Colab** para abrir direto.  
-2. **`.gitignore` aprimorado** (ignora modelos, cache e venv).  
-3. **Seção para usar dataset próprio** bem explicada.  
+
 
 
 ---
