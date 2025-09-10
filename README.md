@@ -246,6 +246,115 @@ pre-commit run --all-files
 Este projeto está sob a licença MIT (veja o arquivo LICENSE).
 
 ---
+---
+   ## ggh INSERIR AQUI
+
+
+
+
+---
+
+# 🐱🐶 Transfer Learning Project
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Colab](https://colab.research.google.com/assets/colab-badge.svg)
+
+## 📌 Descrição
+
+Este projeto demonstra como aplicar **Transfer Learning** utilizando a arquitetura **MobileNetV2** pré-treinada no **ImageNet**, para classificar imagens do dataset **Cats vs Dogs**.  
+
+O código está disponível em duas versões:  
+- **Notebook Jupyter/Google Colab**: [`Transfer_Learning_Colab.ipynb`](./Transfer_Learning_Colab.ipynb)  
+- **Script Python standalone**: [`transfer_learning_colab.py`](./transfer_learning_colab.py)  
+
+---
+
+## 🚀 Tecnologias Utilizadas
+- **Python 3.9+**
+- **TensorFlow / Keras**
+- **TensorFlow Datasets (TFDS)**
+- **Matplotlib / NumPy**
+
+---
+
+## 📂 Estrutura do Repositório
+
+Transfer-Learning-Project/ │── 📄 README.md                 → Documentação principal │── 📄 LICENSE                   → Licença MIT │── 📄 requirements.txt          → Dependências do projeto │── 📄 .gitignore                → Ignorar arquivos desnecessários no Git │── 📄 transfer_learning_colab.py → Script Python standalone │── 📄 Transfer_Learning_Colab.ipynb → Notebook Jupyter/Google Colab │── 📁 history/ │     └── accuracy_curve.png     → Curva de aprendizado (acurácia)
+
+---
+
+## ⚙️ Instalação Local
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/Santosdevbjj/Transfer-Learning-Project.git
+cd Transfer-Learning-Project
+pip install -r requirements.txt
+
+
+---
+
+▶️ Execução
+
+🔹 Rodar no Google Colab
+
+Abra o notebook diretamente no Colab:
+
+
+🔹 Rodar Localmente (script Python)
+
+Execute o script standalone:
+
+python transfer_learning_colab.py
+
+
+---
+
+📊 Resultados
+
+Durante o treinamento, o modelo atinge bons níveis de acurácia utilizando apenas poucas épocas.
+
+Curva de Aprendizado:
+
+
+
+Modelo salvo como: transfer_learning_model.h5
+
+Dataset: Cats vs Dogs - TensorFlow Datasets
+
+
+
+---
+
+📌 Próximos Passos / Melhorias Futuras
+
+🔧 Fine-tuning de camadas específicas da MobileNetV2
+
+📈 Testes com outros datasets (ex.: CIFAR-10, Flowers, etc.)
+
+☁️ Deploy do modelo em uma API (Flask/FastAPI)
+
+📲 Criação de uma interface Web para upload de imagens
+
+
+
+---
+
+📜 Licença
+
+Este projeto está licenciado sob a MIT License.
+Você pode utilizá-lo livremente, para fins acadêmicos ou profissionais.
+
+
+---
+
+👨‍💻 Desenvolvido por Sérgio Santos
+
+---
+
 
 
 
