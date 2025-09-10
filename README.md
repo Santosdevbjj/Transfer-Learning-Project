@@ -22,6 +22,8 @@ A ideia central é aproveitar modelos pré-treinados como MobileNetV2 e adaptá-
 
 
 ---
+# 🐱🐶 Transfer Learning Project
+
 
 # 🧠 Projeto de Transfer Learning em Python (TensorFlow/Keras)
 
