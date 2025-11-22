@@ -248,8 +248,20 @@ Este projeto está sob a licença MIT (veja o arquivo LICENSE).
 
 
 
+
+
+
+
 👨‍💻 Desenvolvido por Sérgio Santos
 
 ---
+
+**Contato:**
+
+[![Portfólio Sérgio Santos](https://img.shields.io/badge/Portfólio-Sérgio_Santos-111827?style=for-the-badge&logo=githubpages&logoColor=00eaff)](https://santosdevbjj.github.io/portfolio/)
+[![LinkedIn Sérgio Santos](https://img.shields.io/badge/LinkedIn-Sérgio_Santos-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santossergioluiz) 
+
+---
+
 
 
